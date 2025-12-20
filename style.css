@@ -1,3 +1,4 @@
 body{
-    background-image: url(../WebNavidad/images/fondos/fondo_principal.png);
+    background-image: url(images/fondos/fondoPrincipal.png);
+    background-size: cover;
 }
