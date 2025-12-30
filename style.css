@@ -1,4 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.punto {
+	background: #fff !important;
+	border-radius: 50%;
+	position: fixed;
+	top: 0;
+	animation-name: caer;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes caer {
+	0% {
+		top: 0;
+		left: -10px;
+	}
+	
+	10% {
+		left: 10px;
+	}
+	
+	20% {
+		left: -10px;
+	}
+	
+	30% {
+		left: 10px;
+	}
+	
+	40% {
+		left: -10px;
+	}
+	
+	50% {
+		left: 10px;
+	}
+	
+	60% {
+		left: -10px;
+	}
+	
+	70% {
+		left: 10px;
+	}
+	
+	80% {
+		left: -10px;
+	}
+	
+	90% {
+		left: 10px;
+	}
+	
+	100% {
+		top: 110vh;
+		left: -10px;
+	}
+}
+
 body{
-    background-image: url(images/fondos/fondoPrincipal.png);
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(images/fondos/fondoPrincipal.png);
     background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    background-color: #0b1d13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+/* Caja principal */
+.contador{
+    text-align: center;
+    font-size: 2rem;
+    padding: 40px 60px;
+    border-radius: 20px;
+    background: rgba(15, 40, 25, 0.85);
+    box-shadow:
+        0 0 15px #ff0000,
+        0 0 30px #00ff88;
+    animation: brilloNavidad 3s infinite alternate;
+}
+
+/* Tiempo */
+.tiempo{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffeb3b;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px #00ff88;
 }
