@@ -12,11 +12,19 @@
         <div class="tiempo" id="contador"></div>
     </div>
 
-    <!--   
-
-    0 + 0 = 0
-
-    -->
+    <div class="recibidor">
+        <h2>Enviale una carta a Papá Noel para que sepa que regalarte en Navidad</h2>
+        <p>¡Cuentale los deseos que tienes aquí!</p>
+        <form class="carta-form" action="mailto:ejemplo@ejemplo.com" method="post" enctype="text/plain">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="mensaje">Tu carta:</label>
+            <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu carta aquí..." required></textarea>
+            
+            <button type="submit">Enviar Carta</button>
+        </form>
+    </div>
 
     <script src="JS.js"></script>
 </body>

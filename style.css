@@ -65,41 +65,100 @@
 
 body{
     background-image: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
     url(images/fondos/fondoPrincipal.png);
     background-size: cover;
     background-position: center;
-    color: #ffffff;
-    background-color: #0b1d13;
+    color: #2F4F2F; /* Verde pino oscuro para natural */
+    background-color: #F5F5DC; /* Beige para fondo natural */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: 'Trebuchet MS', sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
-/* Caja principal */
 .contador{
     text-align: center;
     font-size: 2rem;
     padding: 40px 60px;
     border-radius: 20px;
-    background: rgba(15, 40, 25, 0.85);
-    box-shadow:
-        0 0 15px #ff0000,
-        0 0 30px #00ff88;
-    animation: brilloNavidad 3s infinite alternate;
+    background: rgba(255, 255, 255, 0.8); /* Blanco translúcido natural */
+    color: #8B0000; /* Rojo natural */
 }
 
-/* Tiempo */
 .tiempo{
     font-size: 3rem;
     font-weight: bold;
     margin-top: 15px;
-    color: #ffeb3b;
-    text-shadow:
-        0 0 10px #ff0000,
-        0 0 20px #00ff88;
+    color: #DAA520; /* Dorado natural */
+}
+
+.recibidor {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Blanco translúcido natural */
+    max-width: 600px;
+    width: 90%;
+}
+
+.recibidor h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #228B22; /* Verde natural */
+}
+
+.recibidor p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #2F4F2F; /* Verde pino */
+}
+
+.carta-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carta-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8B0000; /* Rojo natural */
+}
+
+.carta-form input,
+.carta-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-family: inherit;
+}
+
+.carta-form textarea {
+    resize: vertical;
+}
+
+.carta-form button {
+    padding: 10px 20px;
+    background: #228B22; /* Verde natural */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carta-form button:hover {
+    background: #006400; /* Verde más oscuro */
 }

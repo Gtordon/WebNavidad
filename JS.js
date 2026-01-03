@@ -28,6 +28,8 @@ function generarRandom(min, max) {
   return Math.random() * (max - min) + min
 }
 
+const coloresNavidad = ['#ff0000', '#00ff00', '#ffff00', '#ff00ff', '#00ffff', '#ffa500'];
+
 for(let i = 0;i <= 50;i++) {
 	var el = document.createElement('div')
 	var ran = generarRandom(5, 20)
@@ -40,7 +42,7 @@ for(let i = 0;i <= 50;i++) {
 	el.style.marginLeft = ranDos + 'vw';
 	el.style.marginRight = ranTres + 'vw';	
 	el.style.marginTop = '-' + (parseInt(ran) + 10) + 'px';	
-	el.style.background = '#'+i+i+i
+	el.style.background = coloresNavidad[Math.floor(Math.random() * coloresNavidad.length)];
 	el.style.width = ran + 'px';
 	el.style.height = ran + 'px';
 	el.style.animationDuration = ranCinco + 's';
