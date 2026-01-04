@@ -76,7 +76,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    padding: 20px 0;
     font-family: 'Trebuchet MS', sans-serif;
     overflow: auto;
 }
@@ -166,7 +166,7 @@ body{
 }
 
 img {
-    width: 800px;
+    max-width: 100%;
     height: auto;
     border: 10px solid;
     border-image: repeating-linear-gradient(to right, #FF0000 0px, #FF0000 10px, #FFFFFF 10px, #FFFFFF 20px) 1;
@@ -176,4 +176,8 @@ img {
 
 h1 {
     text-align: center;
+}
+
+header {
+    padding-top: 20px;
 }
