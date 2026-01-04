@@ -69,8 +69,8 @@ body{
     url(images/fondos/fondoPrincipal.png);
     background-size: cover;
     background-position: center;
-    color: #2F4F2F; /* Verde pino oscuro para natural */
-    background-color: #F5F5DC; /* Beige para fondo natural */
+    color: #0fa30f;
+    background-color: #F5F5DC;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,15 +86,15 @@ body{
     font-size: 2rem;
     padding: 40px 60px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Blanco translúcido natural */
-    color: #8B0000; /* Rojo natural */
+    background: rgba(255, 255, 255, 0.8);
+    color: #8B0000;
 }
 
 .tiempo{
     font-size: 3rem;
     font-weight: bold;
     margin-top: 15px;
-    color: #DAA520; /* Dorado natural */
+    color: #DAA520;
 }
 
 .recibidor {
@@ -102,21 +102,23 @@ body{
     margin-top: 40px;
     padding: 20px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Blanco translúcido natural */
+    background: rgba(255, 255, 255, 0.8);
     max-width: 600px;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .recibidor h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #228B22; /* Verde natural */
+    color: #228B22;
 }
 
 .recibidor p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #2F4F2F; /* Verde pino */
+    color: #379637;
 }
 
 .carta-form {
@@ -161,4 +163,17 @@ body{
 
 .carta-form button:hover {
     background: #006400; /* Verde más oscuro */
+}
+
+img {
+    width: 800px;
+    height: auto;
+    border: 10px solid;
+    border-image: repeating-linear-gradient(to right, #FF0000 0px, #FF0000 10px, #FFFFFF 10px, #FFFFFF 20px) 1;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
 }
